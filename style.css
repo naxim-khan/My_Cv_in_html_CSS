@@ -356,7 +356,7 @@ p{
 }
 
 /* Media Query for screens up to 768px (for mobile devices) */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .left-Side{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 0px;
