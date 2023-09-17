@@ -13,39 +13,9 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#0659defc, #2e0047);
-}
-
- body::before,
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-}
-
-body::before {
-    /* background: linear-gradient( #c567f8,#3480fbfc);
-     */
-     background: linear-gradient( #917FB3,#E5BEEC);
-}
-
-body::after {
-    background: linear-gradient( #917FB3,#E5BEEC);
-    /* background: linear-gradient( #c567f8,#3480fbfc); */
-    /* background: linear-gradient(#3480fbfc, #c567f8); */
     /* background: linear-gradient(#0659defc, #2e0047); */
-} 
-
-
-
-
-
-
-/* Add styles for the content in your website */
+    background: linear-gradient( #917FB3,#E5BEEC);
+}
 
 
 .cv{
@@ -284,9 +254,10 @@ p{
 
 .skills .box .percent{
     position: relative;
+    border-radius: 10px;
     width: 100%;
     height: 10px;
-    background: #f0f0f0;
+    background: #6a9da6;
 }
 
 .skills .box .percent div{
@@ -295,6 +266,7 @@ p{
     left: 0;
     height: 100%;
     background-color: #0999dc;
+    border-radius: 10px;
 }
 
 
@@ -326,9 +298,22 @@ p{
 
 
 /* Media Query for screens up to 1000px */
+
 @media (max-width: 1000px) {
-    .cv {
-        margin: 20px; /* Reduce margin for smaller screens */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+    .cv{
+       
+        margin: 0px 0px 0px;
+        padding: 0;
+        
     }
     .percentage{
         width: 85%;
@@ -344,8 +329,8 @@ p{
     }
 
     .right-Side {
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     .contactInfo ul li {
@@ -361,15 +346,34 @@ p{
 
 /* Media Query for screens up to 768px (for mobile devices) */
 @media (max-width: 768px) {
-    .left-Side{
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 0px;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#0659defc, #2e0047);
+    }
+    .cv{
+        margin: 0;
+        padding: 0;
+       
+    }
+    .left-Side {
+        border-top-left-radius: 0;
     }
 
+    .right-Side {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+
     .cv-content{
-        margin: 10px;
+        margin: 0px;
+        display:flex;
         grid-template-columns: repeat(1, 1fr);
-        /* background-color: red; */
+        background-color: red;
     }
     .per-media{
         width: 90%;
@@ -381,10 +385,32 @@ p{
 
 
 @media (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#0659defc, #2e0047);
+    }
     .box{
         /* background-color: red; */
         flex-direction: column;
     }
+    .cv{
+        margin: 0;
+        padding: 0;
+       
+    }
+    .left-Side {
+        border-top-left-radius: 0;
+    }
+
+    .right-Side {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
     .year_company{
         min-width: 150px;
         margin-bottom: 5px;
@@ -395,8 +421,5 @@ p{
     .skills .box{
         grid-template-columns: repeat(1,1fr);
     }
-    .left-Side{
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 0px;
-    }
+    
 }
