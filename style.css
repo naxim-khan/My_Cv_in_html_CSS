@@ -330,6 +330,10 @@ p{
     .cv {
         margin: 20px; /* Reduce margin for smaller screens */
     }
+    .percentage{
+        width: 85%;
+        
+    }
 
     .cv .cv-content {
         grid-template-columns: 1fr; /* Switch to a single column layout */
@@ -356,7 +360,7 @@ p{
 }
 
 /* Media Query for screens up to 768px (for mobile devices) */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .left-Side{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 0px;
