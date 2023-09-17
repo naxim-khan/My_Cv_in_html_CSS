@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#0659defc, #2e0047);
+}
+
+ body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+body::before {
+    /* background: linear-gradient( #c567f8,#3480fbfc);
+     */
+     background: linear-gradient( #917FB3,#E5BEEC);
+}
+
+body::after {
+    background: linear-gradient( #917FB3,#E5BEEC);
+    /* background: linear-gradient( #c567f8,#3480fbfc); */
+    /* background: linear-gradient(#3480fbfc, #c567f8); */
+    /* background: linear-gradient(#0659defc, #2e0047); */
+} 
+
+
+
+
+
+
+/* Add styles for the content in your website */
+
+
+.cv{
+    margin: 50px;
+    margin-bottom: 50px;
+    
+}
+.cv .cv-content{
+    background: rgba(128, 31, 255, 0.294);
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+
+.cv .cv-content .left-Side{
+    position: relative;
+    background: linear-gradient(#2e0083, #b835ff);
+    
+    padding: 50px;
+    backdrop-filter: blur(15px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-Side{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    backdrop-filter: blur(15px);
+    background: linear-gradient(rgb(196, 244, 255), rgb(156, 177, 255));
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 2555, 0.2);
+}
+
+.profileText .imgBx{
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    width: 170px;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.profileText h2 span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+
+.contactInfo{
+    /* border: 2px solid red; */
+    left: 0;
+    width: 115%;
+    padding-top: 10px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.contactInfo ul{
+    position: relative;
+
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.icon {
+    font-size: 1.2rem;
+    color: #25e6ff;
+    /* color: blue; */
+}
+
+
+.text i{
+    text-decoration: none;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+}
+.text a{
+    font-weight: 300;
+    /* font-size: 12px; */
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+}
+
+.cv .cv-content .right-Side{
+    position: relative;
+    background-color:#fff ;
+    padding: 40px;
+}
+
+.span-edu{
+    font-size: .7rem;
+}
+
+.contactInfo.education li{
+    color: #1df0ff;
+    font-weight: 500;
+}
+
+.contactInfo.education .college{
+    color: #fff;
+    font-weight: 200;
+    font-size: .7rem;
+
+}
+
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 500;
+
+}
+.language h3{
+    color: #fff;
+}
+
+.percentage{
+    position: relative;
+    width: 100%;
+    height:6px ;
+    background: #081920;
+  
+    border-radius: 6px;
+    display: block;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+.percentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    height: 100%;
+    background: #1ed2ff;
+}
+.lang-text{
+    color: #fff;
+}
+
+
+.about{
+    margin-bottom: 50px;
+
+}
+
+.about:last-child{
+    margin-bottom:0 ;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p{
+    color: #4f4f4f;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    width: fit-content;
+    /* margin-left: 40px; */
+}
+
+.year_company{
+    min-width: 150px;
+}
+
+.year_company h5{
+    text-transform: uppercase;
+    color: #8f8f8fd4;
+    font-weight:500 ;
+
+}
+
+.about .text h4{
+    text-transform: uppercase;
+    color:#1ba4ff;
+    font-size: 14px;
+
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills .box h4{
+    text-transform:uppercase ;
+    color: #4f4f4f;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0999dc;
+}
+
+
+.interest ul{
+    margin-top: 10px;
+    text-decoration: none;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.interest ul li{
+    list-style: none;
+    color:#333 ;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest .icon{
+    color: #049acc;
+}
+
+.ul-text{
+    font-weight: 100;
+    font-size: medium;
+    color: #013f5c;
+}
+
+
+
+/* Media Query for screens up to 1000px */
+@media (max-width: 1000px) {
+    .cv {
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .cv .cv-content {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+
+    .left-Side {
+        border-top-left-radius: 0;
+    }
+
+    .right-Side {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .contactInfo ul li {
+        margin: 5px 0; /* Reduce list item margin for smaller screens */
+    }
+
+    .icon {
+        font-size: 1rem; /* Reduce icon size for smaller screens */
+    }
+
+    /* Add responsive adjustments for other elements as needed */
+}
+
+/* Media Query for screens up to 768px (for mobile devices) */
+@media (max-width: 768px) {
+    .left-Side{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .cv-content{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: red; */
+    }
+    .per-media{
+        width: 90%;
+    }
+    .interest ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .box{
+        /* background-color: red; */
+        flex-direction: column;
+    }
+    .year_company{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left-Side{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+}
